@@ -1,21 +1,20 @@
 <div ng-controller="CuriosityCtrl" id="curiosity">
   <h2>{{ datum[0].MissionName }}</h2>
 
-  <button ng-click="getDatum()">Learn More:</button>
-  <a href="{{datum[0].Link}}">here</a>
+  <div>  
+    <button ng-click="getDatum()">Learn More:</button>
+    <a href="{{datum[0].Link}}">here</a>
 
-  <button ng-click="sayPlanet()">Which planet?</button>
-    {{ planet }}
+    <button ng-click="sayPlanet()">Which planet?</button>
+      {{ planet }}
 
-  <button ng-click="curious='move-class'">Let's Go!</button>
+    <button ng-click="martian='move-mars'; action='motion'">Let's Go!</button>
+  </div>
 
-  <span>
-    <img src="img/rocket.png" class="standard rocket" ng-class="curious" />
+  <img src="img/mars.png" class="mars" ng-class="martian" />
+
+  <span>  
+    <img src="img/rocket.png" class="rocket" ng-class="action"/>
   </span>
 
-  <span>
-    <svg height="100" class="mars">
-          <circle cx="50" cy="50" r="26" fill="red" />
-    </svg>
-  </span>
 </div>
