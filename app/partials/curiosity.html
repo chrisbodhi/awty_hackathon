@@ -1,0 +1,25 @@
+<div ng-controller="CuriosityCtrl">
+  <h2>Hot damn!</h2>
+
+  <button ng-click="getDatum()">Which data?</button>
+    <ul ng-repeat="one in datum">
+      <li>
+        {{ one.MissionName }}
+      </li>
+    </ul>
+
+  <button ng-click="sayPlanet()">Which planet?</button>
+    {{ planet }}
+
+  <span>
+    <svg id="curiosity" height="20" style="margin-left:45px;">
+        <rect class="curiosity" width="10" height="20" fill="black" />
+    </svg>
+  </span>
+
+  <span>
+    <svg id="mars" height="100" ng-click="followCuriosity()">
+          <circle class="mars" cx="50" cy="50" r="26" fill="red" />
+    </svg>
+  </span>
+</div>

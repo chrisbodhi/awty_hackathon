@@ -1,0 +1,15 @@
+{
+  "name": "Are We There Yet?",
+  "description": "Submission for 2014 NASA Space Apps Challenge",
+  "version": "0.0.1",
+  "homepage": "https://github.com/chrisbodhi/are-we-there-yet",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-route": "1.2.x",
+    "angular-loader": "1.2.x",
+    "angular-mocks": "~1.2.15",
+    "angular-resource": "1.2.x"
+  }
+}

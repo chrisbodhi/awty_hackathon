@@ -1,0 +1,30 @@
+[
+  {
+  "agency":"NASA",
+  "MissionName":"Curiosity Rover",
+  "MissionType":"Soil analysis",
+  "Manned":false,
+  "touch":"Touch down",
+  "planet":"Mars",
+  "LaunchLocation":"Cape Canaveral, Florida, US",
+  "LaunchDate":"20111126",
+  "ArrivalDate":"20120806",
+  "EndDate":null,
+  "Link":"http://en.wikipedia.org/wiki/Curiosity_(rover)",
+  "Information":"Curiosity is a car-sized robotic rover exploring Gale Crater on Mars as part of NASA's Mars Science Laboratory mission (MSL). Curiosity was launched from Cape Canaveral on November 26, 2011, at 10:02 EST aboard the MSL spacecraft and successfully landed on Aeolis Palus in Gale Crater on Mars on August 6, 2012, 05:17 UTC. The Bradbury Landing site was less than 2.4 km (1.5 mi) from the center of the rover's touchdown target after a 563,000,000 km (350,000,000 mi) journey. The rover's goals include: investigation of the Martian climate and geology; assessment of whether the selected field site inside Gale Crater has ever offered environmental conditions favorable for microbial life, including investigation of the role of water; and planetary habitability studies in preparation for future human exploration."
+  },
+  {
+  "agency":["NASA", "ESA"],
+  "MissionName":"Rosetta",
+  "MissionType":"Comet analysis",
+  "Manned":false,
+  "touch":"Fly by",
+  "planet":"Comet 67 P/Churyumov-Gerasimenk",
+  "LaunchLocation":"Kourou, French Guiana",
+  "LaunchDate":"20040302",
+  "ArrivalDate":"20140801",
+  "EndDate":null,
+  "Link":"http://nssdc.gsfc.nasa.gov/nmc/spacecraftDisplay.do?id=2004-006A",
+  "Information":"Rosetta is European Space Agency (ESA) Horizon 2000 cornerstone mission number 3 designed to rendezvous with Comet 67 P/Churyumov-Gerasimenko, drop a probe on the surface, study the comet from orbit, and fly by at least one asteroid en route. The principal goals are to study the origin of comets, the relationship between cometary and interstellar material and its implications with regard to the origin of the solar system. Its scientific objectives to achieve these goals are: global characterization of the nucleus, determination of dynamic properties, surface morphology and composition; determination of the chemical, mineralogical and isotopic compositions of volatiles and refractories in a cometary nucleus; determination of the physical properties and interrelation of volatiles and refractories in a cometary nucleus; study of the development of cometary activity and the processes in the surface layer of the nucleus and the inner coma (dust/gas interaction); global characterisation of asteroids, including determination of dynamic properties, surface morphology and composition."
+  }
+]
