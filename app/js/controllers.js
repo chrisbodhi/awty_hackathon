@@ -12,6 +12,7 @@ angular.module('timelineApp.controllers', [])
     };
 
     $scope.followCuriosity = function() {
+      
       alert("on it");
     };
 

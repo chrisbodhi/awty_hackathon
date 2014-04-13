@@ -28,3 +28,13 @@
   content: "";
   padding: 0;
 }
+
+#earth {
+  left: -200px ;
+  position: absolute;
+}
+
+#curiosity {
+  position: absolute;
+  z-index: 3;
+}

@@ -1,24 +1,22 @@
-<div ng-controller="CuriosityCtrl">
-  <h2>Hot damn!</h2>
+<div ng-controller="CuriosityCtrl" id="curiosity">
+  <h2>{{ datum[0].MissionName }}</h2>
 
-  <button ng-click="getDatum()">Which data?</button>
-    <ul ng-repeat="one in datum">
-      <li>
-        {{ one.MissionName }}
-      </li>
-    </ul>
+  <button ng-click="getDatum()">Learn More:</button>
+  <a href="{{datum[0].Link}}">here</a>
 
   <button ng-click="sayPlanet()">Which planet?</button>
     {{ planet }}
 
-  <span>
-    <svg id="curiosity" height="20" style="margin-left:45px;">
-        <rect class="curiosity" width="10" height="20" fill="black" />
+  <button  ng-click="followCuriosity()">Let's Go!</button>
+
+  <span class="curiosity">
+    <svg height="20">
+        <rect width="10" height="20" fill="black" />
     </svg>
   </span>
 
   <span>
-    <svg id="mars" height="100" ng-click="followCuriosity()">
+    <svg id="mars" height="100">
           <circle class="mars" cx="50" cy="50" r="26" fill="red" />
     </svg>
   </span>
