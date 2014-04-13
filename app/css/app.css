@@ -38,3 +38,29 @@
   position: absolute;
   z-index: 3;
 }
+
+.rocket {
+  transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  width:5%;
+}
+
+.mars {
+  margin-left: 5000px;
+}
+
+.standard {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  -webkit-transition:width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition:width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.standard.move-class {
+  -webkit-transform:translate(4800px,0);
+  transform:translate(4800px,0);
+}
+
+

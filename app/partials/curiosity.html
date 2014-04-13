@@ -7,17 +7,15 @@
   <button ng-click="sayPlanet()">Which planet?</button>
     {{ planet }}
 
-  <button  ng-click="followCuriosity()">Let's Go!</button>
+  <button ng-click="curious='move-class'">Let's Go!</button>
 
-  <span class="curiosity">
-    <svg height="20">
-        <rect width="10" height="20" fill="black" />
-    </svg>
+  <span>
+    <img src="img/rocket.png" class="standard rocket" ng-class="curious" />
   </span>
 
   <span>
-    <svg id="mars" height="100">
-          <circle class="mars" cx="50" cy="50" r="26" fill="red" />
+    <svg height="100" class="mars">
+          <circle cx="50" cy="50" r="26" fill="red" />
     </svg>
   </span>
 </div>

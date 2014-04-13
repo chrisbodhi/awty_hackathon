@@ -6,7 +6,7 @@ angular.module('timelineApp.controllers', [])
   .controller('MyCtrl2', [function() {
 
   }])
-  .controller('CuriosityCtrl', ['$scope', '$http', function($scope, $http) {
+  .controller('CuriosityCtrl', ['$scope', '$http', '$animate', function($scope, $http) {
     $scope.sayPlanet = function() {
       $scope.planet = "Going to Mars";
     };

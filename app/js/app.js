@@ -4,6 +4,7 @@
 angular.module('timelineApp', [
   'ngRoute',
   'ngResource',
+  'ngAnimate',
   'timelineApp.filters',
   'timelineApp.services',
   'timelineApp.directives',
