@@ -11,8 +11,8 @@ angular.module('timelineApp', [
   'timelineApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  // $routeProvider.when('/index', {templateUrl: 'index.html', controller: 'IndexCtrl'});
+  $routeProvider.when('/index', {templateUrl: '/index', controller: 'IndexCtrl'});
   $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-  $routeProvider.when('/curiosity', {templateUrl: 'partials/curiosity.html', controller: 'CuriosityCtrl'});
+  $routeProvider.when('/Curiosity Rover', {templateUrl: 'partials/curiosity.html', controller: 'CuriosityCtrl'});
   $routeProvider.otherwise({redirectTo: '/index'});
 }]);

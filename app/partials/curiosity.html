@@ -1,12 +1,8 @@
 <div ng-controller="CuriosityCtrl" id="curiosity" ng-init="getDatum()">
-  <h2>{{ datum[0].MissionName }}</h2>
-
-  <ul ng-repeat="mission in datum | filter:'Mars'">
-    <li>{{mission.planet}}</li>
-  </ul>
+  <h2>{{ datum[0].MissionName | filter:'curiosity' }}</h2>
 
   <div>  
-    <a href="{{datum[0].Link}}">Learn more here.</a>
+    <a href="{{Link}}">Learn more here.</a>
 
     <button ng-click="sayPlanet()">Which planet?</button>
       {{ planet }}

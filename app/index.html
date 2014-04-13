@@ -17,21 +17,24 @@
           <!-- <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li> -->
         </ul>
 
-        <section class="top-bar-section">
+        <section class="top-bar-section" ng-controller="IndexCtrl" ng-init="getDatum()">
           <!-- Right Nav Section -->
           <ul class="right">
             <li class="has-dropdown">
-              <a href="#">Destinations</a>
+              <a href="#">Where Do You Want to Go?</a>
               <ul class="dropdown">
                 <li class="has-dropdown not-click">
                   <a href="#">Mars</a>
                   <ul class="dropdown">
-                    <li><a href="#/curiosity">Curiosity</a></li>
-                    <li><a href="#/curiosity">Curiosity</a></li>
+                    <li><a ng-repeat="mission in datum | filter:'Mars'" href="#/{{mission.MissionName}}" >{{mission.MissionName}}</a></li>
                   </ul>
                 </li>
-                <li><a href="#">First link in dropdown</a></li>
-                <li><a href="#">First link in dropdown</a></li>
+                <li class="has-dropdown not-click">
+                  <a href="#">Moon</a>
+                  <ul class="dropdown"> 
+                    <li><a ng-repeat="mission in datum | filter:'Moon'" href="#/{{mission.MissionName}}" >{{mission.MissionName}}</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
           </ul>
