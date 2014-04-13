@@ -2,9 +2,7 @@
   <h2>{{ datum.MissionName | filter:'curiosity' }} <button ng-click="martian='move-mars'; action='motion'; earthican='move-earth'; box='show-box'">Launch Mission</button></h2>
 
   <span>  
-    <svg id="earth" height="600" ng-class="earthican">
-        <circle cx="50" cy="50" r="500" fill="blue" />
-    </svg>
+    <img src="img/earth.png" id="earth" ng-class="earthican" />
   </span>
 
   <span>
