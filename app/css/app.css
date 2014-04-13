@@ -1,12 +1,17 @@
 body {
   background-color: gray;
-  /*background-image: url("http://apod.nasa.gov/apod/image/1401/hchi_FNeyer_large2.jpg");*/
+  background-image: url("http://apod.nasa.gov/apod/image/1401/hchi_FNeyer_large2.jpg");
+}
+
+h2 {
+  color: white;
 }
 #earth {
   left: -200px ;
   position: absolute;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  width: 600px;
 }
 
 #earth.move-earth {
@@ -46,4 +51,36 @@ body {
   transform:translate(-4500px,0);
 }
 
+.bottom {
+  bottom: 0;
+  transition: height 2s ease;
+  -webkit-transition: height 2s ease;
+  -moz-transition: height 2s ease;
+  height: 0px;
+  width: 800px;
+}
+
+.bottom.show-box {
+  color: white;
+  height: 250px;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.bottom a {
+  color: white;
+  font-weight: 700;
+}
+
+.bottom p {
+  color: white;
+  font-size: 0em;
+  transition: font-size 2s ease;
+  -webkit-transition: font-size 2s ease;
+  -moz-transition: font-size 2s ease;
+}
+
+.bottom.show-box p {
+  font-size: .9em;
+}
 

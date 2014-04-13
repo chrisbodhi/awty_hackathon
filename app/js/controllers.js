@@ -6,6 +6,9 @@ angular.module('timelineApp.controllers', [])
   .controller('MyCtrl2', [function() {
 
   }])
+  .controller('ProgressCtrl', [function() {
+
+  }])
   .controller('IndexCtrl', ['$scope', '$http', function($scope, $http) {
 
     $scope.getDatum = function(){
@@ -28,7 +31,7 @@ angular.module('timelineApp.controllers', [])
     $scope.getDatum = function(){
       var httpRequest = $http.get('./js/awtyData.json')
         .success(function(data){
-          $scope.datum = data;
+          $scope.datum = data[0];
         });
       };
   }]);

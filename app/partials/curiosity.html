@@ -1,14 +1,5 @@
 <div ng-controller="CuriosityCtrl" id="curiosity" ng-init="getDatum()">
-  <h2>{{ datum[0].MissionName | filter:'curiosity' }}</h2>
-
-  <div>  
-    <a href="{{Link}}">Learn more here.</a>
-
-    <button ng-click="sayPlanet()">Which planet?</button>
-      {{ planet }}
-
-    <button ng-click="martian='move-mars'; action='motion'; earthican='move-earth'">Let's Go!</button>
-  </div>
+  <h2>{{ datum.MissionName | filter:'curiosity' }} <button ng-click="martian='move-mars'; action='motion'; earthican='move-earth'; box='show-box'">Launch Mission</button></h2>
 
   <span>  
     <svg id="earth" height="600" ng-class="earthican">
@@ -16,11 +7,16 @@
     </svg>
   </span>
 
-  <img src="img/mars.png" class="mars" ng-class="martian" />
+  <span>
+    <img src="img/mars.png" class="mars" ng-class="martian" />
+  </span>
 
   <span>  
     <img src="img/rocket.png" class="rocket" ng-class="action"/>
   </span>
 
-
+  <div class="bottom" ng-class="box">
+    <p>{{ datum.Information | filter:'curiosity' }}</p>
+    <a href="{{ datum.Link}}">Learn more here.</a>
+  </div>
 </div>
