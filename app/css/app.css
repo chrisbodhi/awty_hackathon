@@ -1,37 +1,17 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+body {
+  background-color: gray;
+  /*background-image: url("http://apod.nasa.gov/apod/image/1401/hchi_FNeyer_large2.jpg");*/
 }
-
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
-}
-
 #earth {
   left: -200px ;
   position: absolute;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+#earth.move-earth {
+  -webkit-transform:translate(-600px,0);
+  transform:translate(-600px,0);
 }
 
 #curiosity {

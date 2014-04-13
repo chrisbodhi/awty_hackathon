@@ -11,6 +11,9 @@
     "angular-loader": "1.2.x",
     "angular-mocks": "~1.2.15",
     "angular-resource": "1.2.x",
-    "angular-animate": "1.2.x"
+    "angular-animate": "1.2.x",
+    "jquery": "latest",
+    "fastclick": "latest",
+    "foundation": "latest"
   }
 }

@@ -1,20 +1,30 @@
-<div ng-controller="CuriosityCtrl" id="curiosity">
+<div ng-controller="CuriosityCtrl" id="curiosity" ng-init="getDatum()">
   <h2>{{ datum[0].MissionName }}</h2>
 
+  <ul ng-repeat="mission in datum | filter:'Mars'">
+    <li>{{mission.planet}}</li>
+  </ul>
+
   <div>  
-    <button ng-click="getDatum()">Learn More:</button>
-    <a href="{{datum[0].Link}}">here</a>
+    <a href="{{datum[0].Link}}">Learn more here.</a>
 
     <button ng-click="sayPlanet()">Which planet?</button>
       {{ planet }}
 
-    <button ng-click="martian='move-mars'; action='motion'">Let's Go!</button>
+    <button ng-click="martian='move-mars'; action='motion'; earthican='move-earth'">Let's Go!</button>
   </div>
+
+  <span>  
+    <svg id="earth" height="600" ng-class="earthican">
+        <circle cx="50" cy="50" r="500" fill="blue" />
+    </svg>
+  </span>
 
   <img src="img/mars.png" class="mars" ng-class="martian" />
 
   <span>  
     <img src="img/rocket.png" class="rocket" ng-class="action"/>
   </span>
+
 
 </div>
